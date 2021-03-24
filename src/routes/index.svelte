@@ -27,36 +27,38 @@
 
 </script>
 
-<form on:submit|preventDefault={createEvent}>
-	<label for="eventName">What are you trying to plan?</label>
-	<input
-		id="eventName"
-		type="text"
-		required
-		bind:value={name}
-		
-	/>
+<main>
+	<form on:submit|preventDefault={createEvent}>
+		<label for="eventName">What are you trying to plan?</label>
+		<input
+			id="eventName"
+			type="text"
+			required
+			bind:value={name}
+			
+		/>
 
-	<h3>What dates would you like to see?</h3>
+		<h3>What dates would you like to see?</h3>
 
-	<label for="startDate">Start Date</label>
-	<input
-		type="date"
-		id="startDate"
-		required
-		bind:value={startDate}
-	/>
+		<label for="startDate">Start Date</label>
+		<input
+			type="date"
+			id="startDate"
+			required
+			bind:value={startDate}
+		/>
 
-	<label for="endDate">End Date</label>
-	<input
-		type="date"
-		id="endDate"
-		required
-		bind:value={endDate}
-	/>
+		<label for="endDate">End Date</label>
+		<input
+			type="date"
+			id="endDate"
+			required
+			bind:value={endDate}
+		/>
 
-	<button type="submit">Let's Go!</button>
-</form>
+		<button type="submit">Let's Go!</button>
+	</form>
+</main>
 
 <style>
 </style>
