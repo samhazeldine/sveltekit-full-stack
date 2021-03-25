@@ -21,7 +21,7 @@
 			goto('/event/' + eventId);
 		}
 		catch(err){
-			alert("error");
+			alert('error');
 		}
 	}
 
