@@ -3,7 +3,7 @@
         const eventId = page.params.eventid;
 
         try {
-            const res = await fetch("/api/event/${eventId}");
+            const res = await fetch(`/api/event/${eventId}`);
             const jsonRes = await res.json();
             const event = jsonRes.eventDetail[0];
             return {
